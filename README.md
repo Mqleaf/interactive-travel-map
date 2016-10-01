@@ -1,6 +1,8 @@
 # interactive-travel-map
 【项目介绍】
 
+链接：http://1.muliping.applinzi.com/map_2/
+
 展示丽江旅程的网站，通过HTML5/CSS3实现响应式布局。使用svg和原生Javascript实现页面交互。
 
 【文件结构】
