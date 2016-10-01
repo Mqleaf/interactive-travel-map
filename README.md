@@ -102,7 +102,7 @@ viewport的知识，推荐参考https://www.zybuluo.com/gongzhen/note/170557
       
 			|__viewbox（符号大小，参数：x,y,w,h）
       
-|__path（路径）
+			|__path（路径）
 
    使用svg
    
