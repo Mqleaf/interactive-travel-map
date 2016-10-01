@@ -1,0 +1,108 @@
+*,*::before,*::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    font-family: 'Source Serif Pro';
+}
+a:hover,a:focus,.tab li:hover,.tab li:active{
+    color: #8a200b;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hide{
+    pointer-events: none;
+    display: none;
+}
+main {
+    max-width: 1800px;
+    display:block;
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    background: #33a3a0;
+}
+/*header*/
+.web-link{
+    text-align: center;
+    padding-top: 1rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+.logo{
+    width:5.5rem;
+    height: 5.5rem;
+}
+.header-title{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.tab{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.tab li{
+    display: inline-block;
+    padding: 0 4rem 1rem 2rem;
+    cursor: pointer;
+    line-height: 1;
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.icon{
+    display: inline-block;
+    fill: currentColor;
+    line-height: 1;
+    font-size: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 0 0.4rem 0;
+    vertical-align: middle;
+}
+footer{
+    font-family: 'Source Serif Pro';
+    font-weight: bolder;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5rem 0;
+    color: #fff;
+}
+@media screen and (max-width:768px){
+    main{
+        width: 100vw;
+        margin:0;
+    }
+    .logo{
+        width: 4rem;
+        height: 4rem;
+    }
+    .tab li{
+        display: inline-block;
+        padding: 0 2rem 1rem 0;
+        cursor: pointer;
+        line-height: 1;
+        vertical-align: middle;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+}

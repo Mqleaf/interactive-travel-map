@@ -1,0 +1,35 @@
+.note-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+}
+.note{
+    width: 90%;
+    margin: 0 auto;
+    color: #8a200b;
+    padding: 1vw 4vw;
+    font-size:1vw;
+}
+
+.note p{
+    line-height: 2;
+}
+.note h1{
+    margin: 2rem 0;
+}
+.dongba-description{
+    padding-bottom: 0.5rem;
+}
+.dongba-img{
+   width: 100%;
+    height: auto;
+}
+@media screen and (max-width:768px){
+    .note{
+        font-size: 1rem;
+    }
+    .note h1,.note h2{
+        font-size: 1.2rem;
+    }
+}

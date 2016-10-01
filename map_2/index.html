@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE 最新版本的 Standards-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Map in Lijiang</title>
+    <link rel="shortcut icon" href="img/yunhe.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link href = "css/font.css" rel = "stylesheet" type = "text/css">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <svg class="hide">
+        <defs>
+            <symbol id="icon-map" viewBox="0 0 24 32">
+                <title>map</title>
+                <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+            </symbol>
+            <symbol id="icon-route" viewBox="0 0 24 32">
+                <title>route</title>
+                <path d="M15 31.5v-9.5c0-0.276-0.133-1-0.409-1s-0.591 0.224-0.591 0.5v10c0 0.276 0.314 0.5 0.591 0.5s0.409-0.224 0.409-0.5zM15.091 1.562v-1.062c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v1.062c0 0.276 0.224 0.5 0.5 0.5s0.5-0.223 0.5-0.5zM3.89 3.471l-3.567 2.798c-0.205 0.189-0.323 0.456-0.323 0.731s0.118 0.542 0.354 0.758l3.505 2.745c0.307 0.283 0.854 0.497 1.273 0.497h13.828c0.573 0 1.040-0.463 1.040-1.033v-5.934c0-0.57-0.467-1.033-1.040-1.033h-13.828c-0.419 0-0.966 0.214-1.242 0.471zM19 9.967c0 0.015-0.018 0.033-0.040 0.033h-13.828c-0.17 0-0.471-0.117-0.625-0.258l-3.536-2.713 3.566-2.798c0.125-0.114 0.425-0.231 0.595-0.231l13.868 0.033v5.934zM25.141 12.497c-0.307-0.283-0.854-0.497-1.273-0.497h-13.828c-0.573 0-1.040 0.463-1.040 1.033v5.935c0 0.569 0.467 1.032 1.040 1.032h13.828c0.419 0 0.966-0.214 1.243-0.471l3.566-2.798c0.205-0.189 0.323-0.456 0.323-0.731s-0.118-0.542-0.354-0.758l-3.505-2.745zM10 13h13.868c0.17 0 0.471 0.117 0.625 0.258l3.536 2.713-3.566 2.798c-0.125 0.114-0.425 0.231-0.595 0.231h-13.868v-6z"></path>
+            </symbol>
+            <symbol id="icon-note" viewBox="0 0 24 32">
+                <title>travel note</title>
+                <path d="M23.5 32c0.869 0 1.5-0.631 1.5-1.5v-28c0-0.869-0.631-1.5-1.5-1.5h-20c-0.869 0-1.5 0.631-1.5 1.5v1.167c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-1.167c0-0.313 0.187-0.5 0.5-0.5h4.562v29h-4.562c-0.313 0-0.5-0.187-0.5-0.5v-0.917c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v0.917c0 0.869 0.631 1.5 1.5 1.5h20zM9 2h14.5c0.313 0 0.5 0.187 0.5 0.5v28c0 0.313-0.187 0.5-0.5 0.5h-14.5v-29zM27 29.5v-26c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v26c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5zM0.5 11h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM0.5 7h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM0.5 15h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM0.5 23h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM0.5 19h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5zM0.5 27h4c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-4c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <main>
+        <header class="header">
+            <div class="web-link">
+                <a href="#" class="web-icon">
+                    <img class="logo" src="img/yunhe.png" alt="web-logo">
+                    <h2 class="header-title">Travel Map</h2>
+                </a>
+            </div>
+            <div class="tab">
+                <ul id="tab">
+                    <li class="tabin"><svg class="icon icon--map"><use xlink:href="#icon-map"></use></svg> Map</li>
+                    <li ><svg class="icon icon--route"><use xlink:href="#icon-route"></use></svg> Route</li>
+                    <li ><svg class="icon icon--note"><use xlink:href="#icon-note"></use></svg> Note</li>
+                </ul>
+            </div>
+        </header>
+        <div id="content">
+            <div id="realcontent"></div>
+        </div>
+        <footer>@yunhe</footer>
+    </main>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

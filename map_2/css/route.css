@@ -1,0 +1,121 @@
+.route{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+}
+.route-container{
+    position: relative;
+    width: 70vw;
+    height: auto;
+    margin: 0 0 0 10vw;
+    padding: 2rem;
+    border-left: 0.2rem solid #3d7b7c;
+}
+
+/*bus标识*/
+.bus{
+    position: fixed;
+    left:20vw;
+    top:60vh;
+    /*top:6rem;
+    left:-14px;*/
+    color: #ef3812;
+    z-index: 10;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+}
+.bus:hover{
+    -webkit-transform: rotate(360deg) scale(1.5);
+}
+.bus-svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill:currentColor;
+}
+/*信息：圆圈，日期，地点，天气*/
+.info-left-circle{
+    width: 3vw;
+    height: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    background-color: #3d7b7c;
+    border-radius: 50%;
+    position: absolute;
+    left:-1.6vw;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Source Serif Pro';
+}
+.info-right>*{
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    margin: .5rem 0 0 1.5rem;
+    padding: 0;
+    color: #8a200b;
+}
+.info-weather-icon{
+    vertical-align: middle;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+/*景点*/
+.pos-route{
+    width: 65vw;
+}
+.pos{
+    margin-top:.5rem;
+    display: inline-block;
+    position: relative;
+}
+.pos-img img{
+    width: 20vw;
+    height:13.2vw;
+}
+.pos-pop{
+    width: 20vw;
+    height:13.2vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(43, 43, 43, 0.55);
+    padding: 0 1rem;
+    display: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width:992px){
+    .bus{
+         left:15vw;
+    }
+    .pos-img img{
+        width: 50vw;
+        height:32vw;
+    }
+    .pos-pop{
+        width: 50vw;
+        height:32vw;
+        padding: 0 .5rem;
+    }
+    .info-left-circle{
+        width: 5vw;
+        height: 5vw;
+        line-height: 5vw;
+        text-align: center;
+        background-color: #3d7b7c;
+        border-radius: 50%;
+        position: absolute;
+        left:-2.6vw;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .pos-pop{
+        font-size: 0.5rem;
+    }
+}

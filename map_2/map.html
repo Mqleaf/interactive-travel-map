@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/yunhe.png">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <section class="map">
+        <picture>
+            <source srcset="img/map/map_min.jpg" media="(max-width: 768px)">
+            <source srcset="img/map/map.jpg">
+            <img class="static" srcset="img/map/map.jpg" alt="My map image">
+        </picture>
+        <svg id="points" class="points" viewBox="0 0 913 546" width="100%" height="100%">
+            <rect transform="rotate(-4.8708624839782715 383.7463684082054,401.49307250976545) " height="2.283337" width="73.64867" y="400.351401" x="346.922031" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#7c7c7c"/>
+            <rect transform="rotate(-1.0179699659347534 270.34738159178994,406.5501708984375) " height="2.502323" width="156.951678" y="405.299042" x="191.871546" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#7c7c7c"/>
+            <rect transform="rotate(-66.0362548828125 251.10705566406253,263.0480651855469) " height="2.465678" width="296.763444" y="261.815225" x="102.725325" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#7c7c7c"/>
+            <rect transform="rotate(13.60049057006836 373.67242431640597,143.56895446777355) " width="120.53484" height="2.32873" fill="#7c7c7c" x="313.405" y="142.40459" />
+            <rect transform="rotate(122.85169982910156 424.64404296875,174.65522766113278)" width="43.83655" height="2.00641" fill="#7c7c7c"  x="402.72578" y="173.65202" />
+            <path data-index="0" data-title="大研古城" class="point" d="m432.79736,367.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+            <path data-index="1" data-title="拉市海" class="point" d="m348.79736,378.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+            <path data-index="2" data-title="石鼓镇" class="point" d="m199.79736,377.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+            <path data-index="3" data-title="虎跳峡" class="point" d="m325.79736,104.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+            <path data-index="4" data-title="云杉坪" class="point" d="m445.79736,127.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+            <path data-index="5" data-title="玉龙雪山" class="point" d="m410.79736,180.96939l0,0c-5.86345,-5.32586 -15.36058,-5.32586 -21.22403,0l0,0c-5.28537,4.80076 -5.86345,13.80221 -1.40393,19.27808l11.97465,15.75253l11.97464,-15.75253c4.54212,-5.40087 3.96403,-14.47732 -1.32134,-19.27808z"/>
+        </svg>
+        <div class="point-tooltip">
+            <em id="point-tooltip"></em>
+        </div>
+        <div class="backgrounds">
+            <div data-index="0" class="background__element" style="background-image: url(img/map/gucheng.jpg)"></div>
+            <div data-index="1" class="background__element" style="background-image: url(img/map/lashihai.jpg)"></div>
+            <div data-index="2" class="background__element" style="background-image: url(img/map/shiguzhen.jpg)"></div>
+            <div data-index="3" class="background__element" style="background-image: url(img/map/hutiaoxia.jpg)"></div>
+            <div data-index="4" class="background__element" style="background-image: url(img/map/yunshanping.jpg)"></div>
+            <div data-index="5" class="background__element" style="background-image: url(img/map/yulongxueshan.jpg)"></div>
+        </div>
+        <div class="points-content">
+            <div class="point-content point-content-1">
+                <h3 class="point-content__title">大研古城</h3>
+                <p class="point-content__subtitle">27<sup>th</sup> of July, 2016</p>
+                <p class="point-content__text">漫步在古城小巷，尽情享受古城慵懒的氛围，在街头巷尾寻觅各式丽江特色小吃。</p>
+            </div>
+            <div class="point-content point-content-2">
+                <h3 class="point-content__title">拉市海</h3>
+                <p class="point-content__subtitle">28<sup>th</sup> of July, 2016</p>
+                <p class="point-content__text">如镜的湖面倒映着玉龙雪山，骑马划船，吃马帮菜，感受自然风光.</p>
+            </div>
+            <div class="point-content point-content-3">
+                <h3 class="point-content__title">石鼓镇</h3>
+                <p class="point-content__subtitle">29<sup>th</sup> of July, 2016</p>
+                <p class="point-content__text">镇中的小街宽约数米，均由青石板铺成，街两旁店铺林立。</p>
+            </div>
+            <div class="point-content point-content-4">
+                <h3 class="point-content__title">虎跳峡</h3>
+                <p class="point-content__subtitle">30<sup>th</sup> of July, 2016</p>
+                <p class="point-content__text">身入谷中，看天一条缝，看江一条龙；头顶绝壁，脚临激流，心惊胆战。</p>
+            </div>
+            <div class="point-content point-content-5">
+                <h3 class="point-content__title">云杉坪</h3>
+                <p class="point-content__subtitle">31<sup>th</sup> of July, 2016</p>
+                <p class="point-content__text">土语称“游午阁”，即“情死之地”，又名锦绣谷、殉情谷，海拔3240米，位于玉龙雪山东面。</p>
+            </div>
+            <div class="point-content point-content-6">
+                <h3 class="point-content__title">玉龙雪山</h3>
+                <p class="point-content__subtitle">1<sup>st</sup> of Augest, 2016</p>
+                <p class="point-content__text">纳西人心中的神山，雪山气势磅礴，玲珑秀丽，有时云蒸霞蔚、玉龙时隐时现；有时碧空如水，群峰晶莹耀眼。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-content">
+        <div class="content__inner">
+            <h2 class="content__title">Travel in Lijiang</h2>
+            <h3 class="content__subtitle">1<sup>st</sup> of Augest, 2016</h3>
+            <p>In Lijiang, you will meet nice people, nice city and nice landscape.<br/>Somebody start their journey here, somebody find their home here. <br/>It is a travel city,and also an Utopia.</p>
+
+        </div>
+    </section>
+
+    <script src="js/lunar.js"></script>
+    <script src="js/map.js"></script>
+
+</body>
+</html>
