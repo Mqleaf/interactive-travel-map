@@ -64,7 +64,7 @@ Map_2
 
 --自适应手机屏幕的宽度
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+\<meta name="viewport" content="width=device-width, initial-scale=1">
 
 viewport：虚拟窗口；
 
@@ -106,7 +106,7 @@ viewport的知识，推荐参考https://www.zybuluo.com/gongzhen/note/170557
 
    使用svg
    
-<svg><use xlink:href="#引用符号的id"></use></svg>
+\<svg>\<use xlink:href="#引用符号的id">\</use>\</svg>
 
 
 --响应式布局
@@ -118,7 +118,7 @@ viewport的知识，推荐参考https://www.zybuluo.com/gongzhen/note/170557
 
 --背景地图
 
-采用H5的响应式图片<picture><source>元素，针对不同的屏幕宽度，加载不同图片
+采用H5的响应式图片\<picture>\<source>元素，针对不同的屏幕宽度，加载不同图片
 
 
 --地标点
@@ -148,13 +148,13 @@ svg将多个地标点合并成一个整体，好处是容易定位，不需要�
 
 --东巴文图片
 
-采用H5的响应式图片<picture><source>元素，针对不同的屏幕宽度，加载不同图片
+采用H5的响应式图片\<picture>\<source>元素，针对不同的屏幕宽度，加载不同图片
 
 --svg动画
 
 ->旋转
 
-<animateTransform attributeName="transform" begin="0s" dur="3s" type="rotate" from="0 132.5 36" to="360 134 38" repeatCount="indefinite"/>
+\<animateTransform attributeName="transform" begin="0s" dur="3s" type="rotate" from="0 132.5 36" to="360 134 38" repeatCount="indefinite"/>
 
 begin：可设置延迟时间
 
@@ -168,13 +168,13 @@ repeatCount:动画重复次数
 
 ->透明度
 
-<animate attributeName="opacity" from="1" to="0" begin="0.9s" dur="3s" repeatCount="indefinite" />
+\<animate attributeName="opacity" from="1" to="0" begin="0.9s" dur="3s" repeatCount="indefinite" />
 
 from/to：透明度
 
 ->路径运动
 
-<animateMotion path="M-5,-5 l7,5 l-7,-5" begin="0.5s" dur="5s" repeatCount="indefinite"/>
+\<animateMotion path="M-5,-5 l7,5 l-7,-5" begin="0.5s" dur="5s" repeatCount="indefinite"/>
 
 Path:运动路径，起始位置（-5，-5），直线移动到（17，5），再直线移动到（-7，-5），这里的坐标是以当前位置为参考点相对坐标，所以最后是移动到起始位置。
 
