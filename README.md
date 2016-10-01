@@ -17,43 +17,43 @@ Map_2
 
 |__ css
 
-  |__ font.css（latin字体）
+	|__ font.css（latin字体）
 
-  |__ main.css（主页样式）
+	|__ main.css（主页样式）
 
-  |__ map.css
+	|__ map.css
 
-  |__ route.css
+	|__ route.css
 
-  |__note.css
+	|__note.css
 
 |__ img
 
-  |__map
+	|__map
 
-  |__ route
+	|__ route
 
-  |__ 1.svg（东巴文小图）
+	|__ 1.svg（东巴文小图）
 
-  |__3.svg（东巴文大图）
+	|__3.svg（东巴文大图）
 
-  |__close.png（map中关闭背景图的图标）
+	|__close.png（map中关闭背景图的图标）
 
-  |__yunhe.png（网页logo）
+	|__yunhe.png（网页logo）
 
 |__ js
 
-  |__jquery-3.0.0.min.js
+	|__jquery-3.0.0.min.js
   
-  |__ fastclick.js(提高手机端点击响应速度)
+	|__ fastclick.js(提高手机端点击响应速度)
   
-  |__ lunar.js（操作svg元素的class）
+	|__ lunar.js（操作svg元素的class）
   
-  |__index.js
+	|__index.js
   
-  |__map.js
+	|__map.js
   
-  |__route.js
+	|__route.js
 
 
 【功能模块】
