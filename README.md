@@ -63,9 +63,9 @@
 
 【功能模块】
 
-<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_2.png">
+<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_2.png" width="70%" height="70%">
 
-<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_3.png">
+<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_3.png" width="70%" height="70%">
 
 1.主页
 
