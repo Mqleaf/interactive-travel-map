@@ -1,64 +1,71 @@
 # interactive-travel-map
 【项目介绍】
 
+展示丽江旅程的网站，通过HTML5/CSS3实现响应式布局。使用svg和原生Javascript实现页面交互。
+
 链接：http://1.muliping.applinzi.com/map_2/
 
-展示丽江旅程的网站，通过HTML5/CSS3实现响应式布局。使用svg和原生Javascript实现页面交互。
+效果图：
+<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map2.png">
 
 【文件结构】
 
-Map_2
+	Map_2
   
-|__ index .html(主页)
+	|__ index .html(主页)
 
-|__ map.html（地图）
+	|__ map.html（地图）
 
-|__ route.html(路线)
+	|__ route.html(路线)
 
-|__ note.html(记录)
+	|__ note.html(记录)
 
-|__ css
+	|__ css
 
-	|__ font.css（latin字体）
+		|__ font.css（latin字体）
 
-	|__ main.css（主页样式）
+		|__ main.css（主页样式）
 
-	|__ map.css
+		|__ map.css
 
-	|__ route.css
+		|__ route.css
 
-	|__note.css
+		|__note.css
 
-|__ img
+	|__ img
 
-	|__map
+		|__map
 
-	|__ route
+		|__ route
 
-	|__ 1.svg（东巴文小图）
+		|__ 1.svg（东巴文小图）
 
-	|__3.svg（东巴文大图）
+		|__3.svg（东巴文大图）
 
-	|__close.png（map中关闭背景图的图标）
+		|__close.png（map中关闭背景图的图标）
 
-	|__yunhe.png（网页logo）
+		|__yunhe.png（网页logo）
 
-|__ js
+	|__ js
 
-	|__jquery-3.0.0.min.js
+		|__jquery-3.0.0.min.js
   
-	|__ fastclick.js(提高手机端点击响应速度)
+		|__ fastclick.js(提高手机端点击响应速度)
   
-	|__ lunar.js（操作svg元素的class）
+		|__ lunar.js（操作svg元素的class）
   
-	|__index.js
+		|__index.js
   
-	|__map.js
+		|__map.js
   
-	|__route.js
+		|__route.js
 
 
 【功能模块】
+
+<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_2.png">
+
+<img src="https://github.com/Mqleaf/interactive-travel-map/blob/master/map_display/map_3.png">
 
 1.主页
 
@@ -94,7 +101,7 @@ viewport的知识，推荐参考https://www.zybuluo.com/gongzhen/note/170557
 
 预定义svg（由于是预定义的元素，所以将其css设置为不可见，禁用鼠标事件）
 
-|__defs(预定义可重用元素)
+	|__defs(预定义可重用元素)
 
 		|__symbol（定义可重用符号）
     
